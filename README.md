@@ -66,8 +66,9 @@ Protecting and Securing MySQL
 
 Step 4: Now we will set the VALIDATE PASSWORD component.
 
-    ### sudo mysql_secure_installation
-    Step 5: Then press “y” to set the password. Next press “0” for the low-level password or choose as you want to set the password.
+### sudo mysql_secure_installation
+
+Step 5: Then press “y” to set the password. Next press “0” for the low-level password or choose as you want to set the password.
 
 Protecting-and-Securing-MySQL_2
 
