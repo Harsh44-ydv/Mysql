@@ -13,8 +13,9 @@
 * Datatypes
 * Primary key & foreign key
 * Constraints
-* Application of Mysql
-* 
+* Application of Mysql CRUD
+* Joins in mysql
+
 
  ## Introduction
   * MySQL is a relational database management system The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data tables, views,       rows, and columns, offers a flexible programming environment.
@@ -27,44 +28,8 @@
 
  Download MySQL
 
-Follow these steps:
-* Step 1: Go to the official website of MySQL and download the community server edition software. Here, you will see the option to choose the Operating System, such as Windows.
-
-* Step 2: Next, there are two options available to download the setup. Choose the version number for the MySQL community server, which you want. If you have good internet connectivity, then                 choose  the mysql-installer-web-community. Otherwise, choose the other one.
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql.png" width="400" height="350">
-
-
-#### Installing MySQL on Windows
-
-* Step 1: After downloading the setup, unzip it anywhere and double click the MSI installer .exe file. It will give the following screen:
-<img src="https://static.javatpoint.com/mysql/images/installmysql2.png" width="400" height="350">
-
-* Step 2: In the next wizard, choose the Setup Type. There are several types available, and you need to choose the appropriate option to install MySQL product and features. Here, we are going to            select the Full option and click on the Next button.
-<img src="https://static.javatpoint.com/mysql/images/installmysql3.png" width="400" height="350">
-
-* Step 3: Once we click on the Next button, it may give information about some features that may fail to install on your system due to a lack of requirements. We can resolve them by clicking on            the Execute button that will install all requirements automatically or can skip them. Now, click on the Next button
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql4.png" width="400" height="350">
-
-* Step 4: In the next wizard, we will see a dialog box that asks for our confirmation of a few products not getting installed. Here,we have to click on the Yes button.
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql5.png" width="400" height="350">
-
-* Step 5: Once we click on the Execute button, it will download and install all the products. After completing the installation, click on the Next button.
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql7.png" width="400" height="350">
-
-* Step 6: In the next wizard, we need to configure the MySQL Server and Router. Here, I am not going to configure the Router because there is no need to use it with MySQL. We are going to show              you  how to configure the server only. Now, click on the Next button.
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql8.png" width="400" height="350">
-
-* Step 7: Now, the MySQL installation is complete. Click on the Finish button
-
-<img src="https://static.javatpoint.com/mysql/images/installmysql21.png" width="400" height="350">
-
-
 ## Installing Mysql on linux
+Follow these steps:
 
 * Step 1: Open terminal using Ctrl+Alt+T. Now copy and paste the following command in the terminal to install MySQL in Linux.
 ##### sudo apt install mysql-server
@@ -144,14 +109,13 @@ There are mainly 3 types of SQL commands:
 
 * MySQL is a relational database management system
 
-* Databases are the essential data repository for all software applications. For example, whenever someone conducts a web search, logs in to an account, or completes a transaction, a database        system is storing the information so it can be accessed in the future.
+* Databases are the essential data repository for all software applications. For example, whenever someone conducts a web search, logs in to an account, or completes a transaction, a database system is storing the information so it can be accessed in the future.
 ## Datatypes
   * Each column in a database table is required to have a name and a data type.
 
-  * An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected        inside of each column, and it also identifies how SQL will interact with the stored data.
+  * An SQL developer must decide what type of data that will be stored inside each column when creating a table. The data type is a guideline for SQL to understand what type of data is expected inside of each column, and it also identifies       how SQL will interact with the stored data.
     
- * Data type of a column defines what value the
-    column can store in table
+ * Data type of a column defines what value the column can store in table
   
  * Defined while creating tables in database
   
@@ -206,7 +170,7 @@ There are mainly 3 types of SQL commands:
 
 ## Constraints:
 
-* Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and    the data action, the action is aborted.
+* Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
 
 * Constraints are used to specify rules for data in a table
 
@@ -242,33 +206,30 @@ column3 datatype constraint,
 * CREATE INDEX - Used to create and retrieve data from the database very quickly
 
 ## Mysql application
-* CRUD =CRUD is the acronym for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and       NoSQL databases
+* CRUD =CRUD is the acronym for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and NoSQL databases
 
 * MySQL provides a set of some basic but most essential operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations
-* 
+
   <img src="https://www.atatus.com/glossary/content/images/2021/07/CRUD.jpeg" width="400" height="300">
   
-  * In such apps, users must be able to create data, have access to the data in the UI by reading the data, update or edit the data, and delete the data.
+* In such apps, users must be able to create data, have access to the data in the UI by reading the data, update or edit the data, and delete the data.
 
 
-
-  ### Creating database & tables
+### Creating database & tables
   * Datatypes
   * Primary & foregin keys
   * Constraints
-  * 
-  ### Mysql commands
+  *
+### Mysql commands
   * create
   * Insert
   * Update
-  * Backup
   * Delete
   * Alter
-  * Drop
-
+  
   ## Creating tabel
   
-    The CREATE TABLE statement is used to create a new table in a database
+The CREATE TABLE statement is used to create a new table in a database
 * Syntax
 
   CREATE TABLE table_name
@@ -313,19 +274,19 @@ column3 datatype constraint,
 
   The UPDATE command is used to update existing rows in a table
 
-* Syntax
+  * Syntax
   
- UPDATE TABLE_NAME
- SET “Column_name1” = ‘value1’, “Column_name2” = ‘value2’
- WHERE “ID” = ‘value’
+  UPDATE TABLE_NAME
+  SET “Column_name1” = ‘value1’, “Column_name2” = ‘value2’
+  WHERE “ID” = ‘value’
 
 * Example
 
- UPDATE customer
- SET CustName = 'Xam’, Age= 32
- WHERE CustID = 4;
-
-## Alter table
+  UPDATE customer
+  SET CustName = 'Xam’, Age= 32
+  WHERE CustID = 4;
+ 
+ ## Alter table
 
   The ALTER TABLE statement is used to add, delete, or modify columns
   in an existing table
@@ -343,6 +304,114 @@ column3 datatype constraint,
 
   ALTER TABLE table_name
   ALTER COLUMN column_name datatype;
+
+## Deleter values in table
+
+The DELETE statement is used to delete existing records in a table
+• Syntax
+
+DELETE FROM table_name WHERE condition;
+
+• Example
+
+DELETE FROM customer
+WHERE CustID = 3;
+
+## Joins in my sql
+
+* JOIN means to combine something.
+* A JOIN clause is used to combine data from two ormore tables, based on a related column between them
+  * A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+### Supported Types of Joins in MySQL
+
+   * INNER JOIN: Returns records that have matching values in both tables
+   * LEFT JOIN: Returns all records from the left table, and the matched records from the right table
+   * RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
+   * Full outer  JOIN: Returns all records from both tables
+     
+### Inner join
+* Syntax
+
+  SELECT column_name(s)
+  FROM TableA
+  INNER JOIN TableB
+  ON TableA.col_name = TableB.col_name
+
+* Example
+
+* SELECT 
+  FROM customer AS c
+  INNER JOIN payment AS p
+  ON c.customer_id = p.customer_id
+
+### Left join
+
+* Returns all records from the left table, and the matched records from the right table
+  
+* Syntax
+
+  SELECT column_name(s)
+  FROM TableA
+  LEFT JOIN TableB
+  ON TableA.col_name = TableB.col_name
+
+• Example
+
+  SELECT *
+  FROM customer AS c
+  LEFT JOIN payment AS p
+  ON c.customer_id = p.customer_id
+
+  ### Right join
+  
+* Returns all records from the right table, and the matched records from the left table
+
+* Syntax
+
+  SELECT column_name(s)
+  FROM TableA
+  RIGHT JOIN TableB
+  ON TableA.col_name = TableB.col_name
+
+* Example
+
+  SELECT *
+  FROM customer AS c
+  RIGHT JOIN payment AS p
+  ON c.customer_id = p.customer_id
+
+  ### Full join
+  * Returns all records when there is a match in either left or right table
+ 
+* Syntax
+
+SELECT column_name(s)
+FROM TableA
+FULL OUTER JOIN TableB
+ON TableA.col_name = TableB.col_name
+
+• Example
+
+SELECT *
+FROM customer AS c
+FULL OUTER JOIN payment AS p
+ON c.customer_id = p.customer_id
+
+### Which joins to use 
+
+• INNER JOIN: Returns records that have matching values in both tables
+
+• LEFT JOIN: Returns all records from the left table, and the matched records from the right table
+
+• RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
+
+• FULL JOIN: Returns all records when there is a match in either left or right table
+
+
+
+
+
 
 
 
