@@ -252,4 +252,97 @@ column3 datatype constraint,
 
 
 
+  ### Creating database & tables
+  * Datatypes
+  * Primary & foregin keys
+  * Constraints
+  * 
+  ### Mysql commands
+  * create
+  * Insert
+  * Update
+  * Backup
+  * Delete
+  * Alter
+  * Drop
+
+  ## Creating tabel
+  
+    The CREATE TABLE statement is used to create a new table in a database
+* Syntax
+
+  CREATE TABLE table_name
+(
+ column_name1 datatype constraint,
+ column_name2 datatype constraint,
+ column_name3 datatype constraint,
+);
+
+* Example
+
+ CREATE TABLE customer
+(
+ CustID int8 PRIMARY KEY,
+ CustName varchar(50) NOT NULL,
+ Age int NOT NULL,
+ City char(50),
+ Salary numeric
+);
+
+## Insert value in table
+
+  The INSERT INTO statement is used to insert new records in a table
+* Syntax
+
+ INSERT INTO TABLE_NAME
+ (column1, column2, column3,...columnN)
+ VALUES
+ (value1, value2, value3,...valueN);
+
+* Example
+
+  INSERT INTO customer
+  (CustID, CustName, Age, City, Salary)
+  VALUES
+  (1, ‘Sam’, 26, ‘Delhi’, 9000),
+  (2, ‘Ram’, 19, ‘Bangalore’, 11000),
+  (3, ‘Pam’, 31, ‘Mumbai’, 6000),
+  (4, ‘Jam’, 42, ‘Pune’, 10000);
+
+## Update value in table
+
+  The UPDATE command is used to update existing rows in a table
+
+* Syntax
+  
+ UPDATE TABLE_NAME
+ SET “Column_name1” = ‘value1’, “Column_name2” = ‘value2’
+ WHERE “ID” = ‘value’
+
+* Example
+
+ UPDATE customer
+ SET CustName = 'Xam’, Age= 32
+ WHERE CustID = 4;
+
+## Alter table
+
+  The ALTER TABLE statement is used to add, delete, or modify columns
+  in an existing table
+* ALTER TABLE - ADD Column Syntax
+
+  ALTER TABLE table_name
+  ADD COLUMN column_name ;
+
+* ALTER TABLE - DROP COLUMN Syntax
+
+  ALTER TABLE table_name
+  DROP COLUMN column_name;
+
+* ALTER TABLE - ALTER/MODIFY COLUMN Syntax
+
+  ALTER TABLE table_name
+  ALTER COLUMN column_name datatype;
+
+
 
