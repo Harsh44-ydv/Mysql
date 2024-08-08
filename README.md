@@ -1,11 +1,11 @@
-# My sql
+# My SQL
 
 <img src="https://webuilddatabases.com/wp-content/uploads/2015/03/mysql-icon-250x314.png" width="500" height="350">
 
-# Tabel of content
+# Tabel of Content
 
 * introduction
-* What is mysql
+* What is  MySql
 * Installation
 * System requirement
 * What is Database
@@ -14,7 +14,7 @@
 * Primary key & foreign key
 * Constraints
 * Application of Mysql CRUD
-* Joins in mysql
+* Joins in MySQL
 
 
  ## Introduction
