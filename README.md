@@ -1,4 +1,4 @@
-# My SQL
+# MySQL
 
 <img src="https://webuilddatabases.com/wp-content/uploads/2015/03/mysql-icon-250x314.png" width="500" height="350">
 
