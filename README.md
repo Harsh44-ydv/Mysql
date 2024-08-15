@@ -398,6 +398,12 @@ WHERE CustID = 3;
 
 * FULL JOIN: Returns all records when there is a match in either left or right table
 
+## Reference links
+* https://www.mysql.com/
+* https://www.w3schools.com/MySQL/default.asp
+* https://en.wikipedia.org/wiki/MySQL
+* https://onecompiler.com/mysql
+
 
 
 
