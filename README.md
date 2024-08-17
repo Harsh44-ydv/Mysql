@@ -4,8 +4,8 @@
 
 # Tabel of Content
 
-* introduction
-* What is  MySql
+* Introduction
+* What is  MySQL?
 * Installation
 * System requirement
 * What is Database
@@ -14,11 +14,12 @@
 * Primary key & foreign key
 * Constraints
 * Application of Mysql CRUD
-* Joins in MySQL
+  
 
 
  ## Introduction
-  * MySQL is a relational database system The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data tables, 
+  * MySQL stand for 'MY Structred Query Language'is a relational database system The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data 
+     tables, 
     views,rows, and columns, offers a flexible programming environment.
   
  ## What is Mysql?
