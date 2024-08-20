@@ -38,41 +38,149 @@
 * Step 1: Open terminal using Ctrl+Alt+T. Now copy and paste the following command in the terminal to install MySQL in Linux.
   ##### sudo apt install mysql-server
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212153900/Install-MySQL-on-Linux_1.png" width="400" height="300">
-
-Then give your password and hit ENTER. 
+```
+ harsh@harsh-IdeaPad-3-15IAU7:~$ sudo apt install mysql-server
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libreoffice-ogltrans libwpe-1.0-1 libwpebackend-fdo-1.0-1
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server-8.0
+  mysql-server-core-8.0
+Suggested packages:
+  mailx tinyca
+The following NEW packages will be installed:
+  mysql-client-8.0 mysql-client-core-8.0 mysql-common mysql-server
+  mysql-server-8.0 mysql-server-core-8.0
+0 upgraded, 6 newly installed, 0 to remove and 103 not upgraded.
+Need to get 7,212 B/21.8 MB of archives.
+After this operation, 185 MB of additional disk space will be used.
+Do you want to continue? [Y/n]  
+Then give your password and hit ENTER.
+```
 
 * Step 2: Press “y” to continue.
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154030/Install-MySQL-on-Linux_2-(1).jpg" width="400" height="300">
-
-* It will take some time to download and install MySQL in Linux.
-
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154135/Install-MySQL-on-Linux_3.jpg" width="400" height="300">
+```
+Do you want to continue? [Y/n] y                                              
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7,212 B]
+Fetched 7,212 B in 1s (10.8 kB/s)        
+Preconfiguring packages ...
+Selecting previously unselected package mysql-common.
+(Reading database ... 216626 files and directories currently installed.)
+Preparing to unpack .../mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Selecting previously unselected package mysql-client-core-8.0.
+Preparing to unpack .../mysql-client-core-8.0_8.0.39-0ubuntu0.22.04.1_amd64.deb 
+...
+Unpacking mysql-client-core-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../mysql-client-8.0_8.0.39-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mysql-server-core-8.0.
+Preparing to unpack .../mysql-server-core-8.0_8.0.39-0ubuntu0.22.04.1_amd64.deb 
+...
+Unpacking mysql-server-core-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.c
+nf (my.cnf) in auto mode
+Selecting previously unselected package mysql-server-8.0.
+(Reading database ... 216824 files and directories currently installed.)
+Preparing to unpack .../mysql-server-8.0_8.0.39-0ubuntu0.22.04.1_amd64.deb ...
+Unpacking mysql-server-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_8.0.39-0ubuntu0.22.04.1_all.deb ...
+Unpacking mysql-server (8.0.39-0ubuntu0.22.04.1) ...
+Setting up mysql-client-core-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Setting up mysql-server-core-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Setting up mysql-client-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+Setting up mysql-server-8.0 (8.0.39-0ubuntu0.22.04.1) ...
+update-alternatives: using /etc/mysql/mysql.cnf to provide /etc/mysql/my.cnf (my
+.cnf) in auto mode
+Renaming removed key_buffer and myisam-recover options (if present)
+mysqld will log errors to /var/log/mysql/error.log
+mysqld is running as pid 10909
+Created symlink /etc/systemd/system/multi-user.target.wants/mysql.service → /lib
+/systemd/system/mysql.service.
+Setting up mysql-server (8.0.39-0ubuntu0.22.04.1) ...
+Processing triggers for man-db (2.10.2-1) ...
+harsh@harsh-IdeaPad-3-15IAU7:~$ ^C
+harsh@harsh-IdeaPad-3-15IAU7:~$
+```
 
 ##### Verify MySQL Installation
 
 * Step 3: To verify the MySQL installation or to know the version of MySQL. Use this commands in your Terminal.
   ##### mysql --version
-
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154344/Verify-MySQL-Installation_1-(1).jpg" width="400" height="300">
+```
+harsh@harsh-IdeaPad-3-15IAU7:~$ mysql --version
+mysql  Ver 8.0.39-0ubuntu0.22.04.1 for Linux on x86_64 ((Ubuntu))
+harsh@harsh-IdeaPad-3-15IAU7:~$ 
+```
 
 * Step 4: Now we will set the VALIDATE PASSWORD component and starts downloading MySQL in our system.
   ##### sudo mysql_secure_installation
+  
+```
+harsh@harsh-IdeaPad-3-15IAU7:~$  sudo mysql_secure_installation
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154459/Protecting-and-Securing-MySQL_1-(1).jpg" width="400" height="300">
+Securing the MySQL server deployment.
 
-* Step 5: Then press “y” to set the password. Next press “0” for the low-level password or choose as you want to set the password.
+Connecting to MySQL using a blank password.
+The 'validate_password' component is installed on the server.
+The subsequent steps will run with the existing configuration
+of the component.
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154650/Protecting-and-Securing-MySQL_2-(1).jpg" width="400" height="300">
+Skipping password set for root as authentication with auth_socket is used by default.
+If you would like to use password authentication instead, this can be done with the "ALTER_USER" command.
+See https://dev.mysql.com/doc/refman/8.0/en/alter-user.html#alter-user-password-management for more information.
 
-* Step 6: Create a password. Then Re-enter the password, then to continue press “y”.
+By default, a MySQL installation has an anonymous user,
+allowing anyone to log into MySQL without having to have
+a user account created for them. This is intended only for
+testing, and to make the installation go a bit smoother.
+You should remove them before moving into a production
+environment.
+```
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212154827/Protecting-and-Securing-MySQL_3-(1).jpg" width="400" height="300">
+* Step 5: Then press “n” to set the system password. Next press “0” for the low-level password or choose as you want to set the password.
+
+```
+Remove anonymous users? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+
+
+Normally, root should only be allowed to connect from
+'localhost'. This ensures that someone cannot guess at
+the root password from the network.
+
+Disallow root login remotely? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+By default, MySQL comes with a database named 'test' that
+anyone can access. This is also intended only for testing,
+and should be removed before moving into a production
+environment.
+
+
+Remove test database and access to it? (Press y|Y for Yes, any other key for No) : n
+
+ ... skipping.
+Reloading the privilege tables will ensure that all changes
+made so far will take effect immediately.
+
+Reload privilege tables now? (Press y|Y for Yes, any other key for No) : y
+Success.
+
+All done! 
+harsh@harsh-IdeaPad-3-15IAU7:~$ 
+
+```
 
 * Now the whole setup is done. Hence, MySQL installaion is successfully done!
-
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231212155108/MySQL-Successful-Installed-(1).jpg" width="400" height="300">
 
 MySQL-Successful-Installed-(1)
 
