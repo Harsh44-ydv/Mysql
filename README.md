@@ -145,7 +145,7 @@ You should remove them before moving into a production
 environment.
 ```
 
-* Step 5: Then press “n” to set the system password. Next press “0” for the low-level password or choose as you want to set the password.
+* Step 5: Then press “n” to set the system password.
 
 ```
 Remove anonymous users? (Press y|Y for Yes, any other key for No) : n
@@ -186,19 +186,18 @@ MySQL-Successful-Installed-(1)
 
 ## System requirement
 
-* To run the Linux OS smoothly minimum 1-2 GB RAM is required. The actual minimum memory requirements for the Linux operating system only (without any additional software) are less than these numbers. For example, 
-  it is possible to install Debian with 20MB RAM.
+* To run the Linux OS smoothly minimum 2 GB RAM is required. The actual minimum memory requirements for the Linux operating system only (without any additional software) are less than these numbers. For example, 
+  it is possible to install Debian with 1GB RAM.
 
-* Linux is not too much space for disk space. To install and use Linux, you should have at least 250 MB of free hard disk space. (The minimum is about 100 MB, but installing Linux on a system with so little disk 
-  space  will compel you to omit many useful applications and will leave you with little room to work.)
+* Linux is not too much space for disk space. To install and use Linux, you should have at least 2GB of free hard disk space. 
 
 * The address-space limit is system-specific: 32-bit OSes imposes a limit of no more than 4Gb: it is often 3Gb. Running 32-bit executables on a 64-bit OS will have similar limits: 64-bit executables will have an 
   essentially infinite system-specific limit (e.g., 128Tb for Linux on x86_64 cpus).
 
 * 4 to 5 GB hard disk is enough to store the system and other important files of a Linux distribution. However, to store users' data it is recommended to have at least 25 GB hard disk size.
 
-* Linux requires very little memory to run compared to other advanced operating systems. You should have at the very least 8MB of RAM; however, it's strongly suggested that you have at least 
-  16MB. The more memory you have, the faster the system will run.
+* Linux requires very little memory to run compared to other advanced operating systems. You should have at the very least 1GB of RAM; however, it's strongly suggested that you have at least 
+  1GB. The more memory you have, the faster the system will run.
 
 ## What is database?
 
@@ -369,14 +368,25 @@ The CREATE TABLE statement is used to create a new table in a database
 
 * Example
 
- CREATE TABLE customer
-(
- CustID int8 PRIMARY KEY,
- CustName varchar(50) NOT NULL,
- Age int NOT NULL,
- City char(50),
- Salary numeric
-);
+ CREATE TABLE Employee 
+ (
+ Emp_ID varchar(50) PRIMARY KEY,
+ Name char(50),
+ Experience int(2),
+ Department char(20),
+ Salary int(5);
+ ```
+Query OK, 0 rows affected, 2 warnings (0.02 sec)
+mysql> show tables;
++-----------------+
+| Tables_in_harsh |
++-----------------+
+| Employee        |
++-----------------+
+1 row in set (0.00 sec)
+
+```
+ 
 
 ## Insert value in table
 
@@ -390,13 +400,33 @@ The CREATE TABLE statement is used to create a new table in a database
 
 * Example
 
-  INSERT INTO customer
-  (CustID, CustName, Age, City, Salary)
+  INSERT INTO Employee
+  (Emp_ID,Name,Experience,Department,Salary)
   VALUES
-  (1, ‘Sam’, 26, ‘Delhi’, 9000),
-  (2, ‘Ram’, 19, ‘Bangalore’, 11000),
-  (3, ‘Pam’, 31, ‘Mumbai’, 6000),
-  (4, ‘Jam’, 42, ‘Pune’, 10000);
+  ('IT01', ‘Harsh’,5, ‘IT’,75000),
+  ('HR02', ‘Aman’, 4, ‘HR’, 60000),
+  ('OP03', ‘Hunny’,6, ‘Operation’,90000),
+  ('SL04', ‘Abhishek’,6, ‘Sales’,85000);
+
+
+```
+Query OK, 4 rows affected (0.01 sec)
+Records: 4  Duplicates: 0  Warnings: 0
+
+
+mysql> select * from Employee;
++--------+----------+------------+------------+--------+
+| Emp_ID | Name     | Experience | Department | Salary |
++--------+----------+------------+------------+--------+
+| IT01   | Harsh    |          5 | IT         |  75000 |
+| Hr02   | Aman     |          4 | HR         |  60000 |
+| OP03   | Hunny    |          6 | Operations |  90000 |
+| SL04   | Abhishek |          6 | Sales      |  85000 |
++--------+----------+------------+------------+--------+
+4 rows in set (0.00 sec)
+
+
+```
 
 ## Update value in table
 
@@ -411,8 +441,25 @@ The CREATE TABLE statement is used to create a new table in a database
 * Example
 
   UPDATE customer
-  SET CustName = 'Xam’, Age= 32
-  WHERE CustID = 4;
+  SET Experience = 10, Salary = 120000
+  WHERE Name = 'Harsh';
+
+```
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from Employee;
++--------+----------+------------+------------+--------+
+| Emp_ID | Name     | Experience | Department | Salary |
++--------+----------+------------+------------+--------+
+| IT01   | Harsh    |         10 | IT         | 120000 |
+| Hr02   | Aman     |          4 | HR         |  60000 |
+| OP03   | Hunny    |          6 | Operations |  90000 |
+| SL04   | Abhishek |          6 | Sales      |  85000 |
++--------+----------+------------+------------+--------+
+4 rows in set (0.00 sec)
+
+```
 
 ## Delete values in table
 
@@ -423,8 +470,26 @@ DELETE FROM table_name WHERE condition;
 
 * Example
 
-DELETE FROM customer
-WHERE CustID = 3;
+DELETE FROM Employee
+WHERE Emp_ID = 'Hr02';
+
+```
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from Employee;
++--------+----------+------------+------------+--------+
+| Emp_ID | Name     | Experience | Department | Salary |
++--------+----------+------------+------------+--------+
+| IT01   | Harsh    |         10 | IT         | 120000 |
+| OP03   | Hunny    |          6 | Operations |  90000 |
+| SL04   | Abhishek |          6 | Sales      |  85000 |
++--------+----------+------------+------------+--------+
+3 rows in set (0.00 sec)
+
+mysql> 
+
+
+```
 
 
 ## Reference links
