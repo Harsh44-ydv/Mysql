@@ -11,16 +11,14 @@
 * What is Database
 * Command types of mysql
 * Datatypes
-* Primary key & foreign key
 * Constraints
 * Application of Mysql CRUD
   
 
 
  ## Introduction
-  * MySQL stand for 'MY Structred Query Language'is a relational database system The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data 
-     tables, 
-    views,rows, and columns, offers a flexible programming environment.
+  * MySQL stands for 'My Structured Query Language' and is a relational database management system. It organizes data into physical files optimized for speed. The logical data model includes objects such as tables, views, rows, and 
+    columns, which provide a flexible environment for managing and querying data.
   
  ## What is Mysql?
   * MySQL is an open-source, Relational Database that stores data in a structured format using rows and columns. This software that enables users to create, manage, and manipulate databases. Developed by MySQL AB, 
@@ -182,7 +180,7 @@ harsh@harsh-IdeaPad-3-15IAU7:~$
 
 * Now the whole setup is done. Hence, MySQL installaion is successfully done!
 
-MySQL-Successful-Installed-(1)
+  MySQL-Successful-Installed-(1)
 
 ## System requirement
 
@@ -267,31 +265,6 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
 * date: date format YYYY-MM-DD
 
 * datetime: date & time combination, format is YYYY-MM-DD hh:mm:ss
-
-## Primary key
-
-* The PRIMARY KEY constraint uniquely identifies each record in a table.
-
-* Primary keys must contain UNIQUE values, and cannot contain NULL values.
-
-* A table can have only ONE primary key; and in the table, this primary key can consist of single or multiple columns (fields).
-
-* A Primary key is a unique column we set in a table to easily identify and locate data in queries
-
-* A table can have only one primary key, which should be unique and NOT NULL
-  
-## Foreign key
-
-* The FOREIGN KEY constraint is used to prevent actions that would destroy links between tables.
-
-* A FOREIGN KEY is a field (or collection of fields) in one table, that refers to the PRIMARY KEY in another table.
-
-* The table with the foreign key is called the child table, and the table with the primary key is called the referenced or parent table.
-
-* A Foreign key is a column used to link two or more tables together
-  
-* A table can have any number of foreign keys, can contain duplicateand NULL values
-  
 
 ## Constraints:
 
@@ -497,11 +470,3 @@ mysql>
 * https://www.w3schools.com/MySQL/default.asp
 * https://en.wikipedia.org/wiki/MySQL
 * https://onecompiler.com/mysql
-
-
-
-
-
-
-
-
