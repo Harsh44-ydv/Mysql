@@ -2,13 +2,13 @@
 
 <img src="https://webuilddatabases.com/wp-content/uploads/2015/03/mysql-icon-250x314.png" width="500" height="350">
 
-# Tabel of Content
+# Table of Content
 
 * Introduction
-* What is  MySQL
+* What is  MySQL?
 * Installation
-* System requirement
-* What is Database
+* System requirements
+* What is database?
 * Command types of mysql
 * Datatypes
 * Constraints
@@ -182,14 +182,14 @@ harsh@harsh-IdeaPad-3-15IAU7:~$
 
   MySQL-Successful-Installed-(1)
 
-## System requirement
+## System requirements
 
 * To run the Linux OS smoothly minimum 2 GB RAM is required. The actual minimum memory requirements for the Linux operating system only (without any additional software) are less than these numbers. For example, 
   it is possible to install Debian with 1GB RAM.
 
-* Linux is not too much space for disk space. To install and use Linux, you should have at least 2GB of free hard disk space. 
+* Linux does not require much disk space. To install and use Linux, you should have at least 2 GB of free hard disk space.
 
-* The address-space limit is system-specific: 32-bit OSes imposes a limit of no more than 4Gb: it is often 3Gb. Running 32-bit executables on a 64-bit OS will have similar limits: 64-bit executables will have an 
+* The address-space limit is system-specific: 32-bit OSes imposes a limit of no more than 4 GB: it is often 3 GB. Running 32-bit executables on a 64-bit OS will have similar limits: 64-bit executables will have an 
   essentially infinite system-specific limit (e.g., 128Tb for Linux on x86_64 cpus).
 
 * 4 to 5 GB hard disk is enough to store the system and other important files of a Linux distribution. However, to store users' data it is recommended to have at least 25 GB hard disk size.
