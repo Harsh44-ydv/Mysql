@@ -4,8 +4,8 @@
 
 # Tabel of Content
 
-* [Introduction](#Introduction)
-* What is  MySQL?
+* Introduction
+* What is  MySQL
 * Installation
 * System requirement
 * What is Database
