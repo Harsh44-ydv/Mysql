@@ -4,15 +4,15 @@
 
 # Table of Content
 
-* Introduction
-* What is  MySQL?
-* Installation
-* System requirements
-* What is database?
-* Command types of mysql
-* Datatypes
-* Constraints
-* Application of Mysql CRUD
+* [Introduction](#Introduction)
+* [What is  MySQL?](#What-is-MySQL?)
+* [Installation](#Installation)
+* [System requirements](#System-requirements)
+* [What is database?](#What-is-database)
+* [Command types of MySQL](#Command-types-of-MySQL)
+* [Datatypes](#Datatypes)
+* [Constraints](#Constraints)
+* [Application of Mysql CRUD](#Application-of-MySQL-CRUD)
   
 
 
@@ -20,7 +20,7 @@
   * MySQL stands for 'My Structured Query Language' and is a relational database management system. It organizes data into physical files optimized for speed. The logical data model includes objects such as tables, views, rows, and 
     columns, which provide a flexible environment for managing and querying data.
   
- ## What is Mysql?
+ ## What is MySQL?
   * MySQL is an open-source, Relational Database that stores data in a structured format using rows and columns. This software that enables users to create, manage, and manipulate databases. Developed by MySQL AB, 
     which is by Oracle Corporation, MySQL is renowned for its reliability, scalability, and ease of use.
   
@@ -30,7 +30,7 @@
 
  Download MySQL
 
-## Installing Mysql on linux
+## Installing MySQL on linux
    Follow these steps:
 
 * Step 1: Open terminal using Ctrl+Alt+T. Now copy and paste the following command in the terminal to install MySQL in Linux.
@@ -207,7 +207,7 @@ harsh@harsh-IdeaPad-3-15IAU7:~$
 * The Database is an part of our life. We encounter several activities that involve our interaction with databases, for example in the bank, in the railway station, in school, in a grocery store, 
   etc. These are the instances where we need to store a large amount of data in one place and fetch these data easily. 
 
-## Command type of mysql?
+## Command type of MySQL?
 There are 3 types of SQL commands:
 
 • DDL (Data Definition Language): A Data Definition Language (DDL) refers to a language that is used to modify data and define data structures. For instance, the DDL commands could be used to remove, add, or 
@@ -216,10 +216,10 @@ There are 3 types of SQL commands:
 • DML (Data Manipulation Language): A data manipulation language (DML) is used for adding (inserting), deleting, and modifying (updating) data in a database. A DML is often a sublanguage of a broader database 
                                    language such as Mysql, with the DML comprising some of the operators in the language.
 
-• DCL (Data Control Language):A data control language (DCL) is used to control access to data stored in a database (authorization). In particular, it is a component of Structured Query Language (SQL). Data Control 
+• DCL (Data Control Language): A data control language (DCL) is used to control access to data stored in a database (authorization). In particular, it is a component of Structured Query Language (SQL). Data Control 
                               Language is one of the logical group in SQL Commands.
 
-## Applications of mysql
+## Applications of MySQL
 
 MySQL is used to store data in tables that map to objects. Each table has a schema defining what columns each row of the table will have. Developers can reliably store and retrieve many data types, including text, numbers, dates, times, and even JSON
 
@@ -250,7 +250,7 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
    
  * Date and time: date, datetime, etc
 
-### Commonly used datatype in mysql
+### Commonly used datatype in MySQL
 
 * int: used for the integer value
 
@@ -304,8 +304,8 @@ column3 datatype constraint,
 
 * CREATE INDEX - Used to create and retrieve data from the database very quickly
 
-## Mysql application
-* CRUD =CRUD is the for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and 
+## MySQL application
+* CRUD = CRUD is the for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and 
   NoSQL databases
 
 * MySQL provides a set of some basic but most essential operations that will help you to easily interact with the MySQL database and these operations are known as CRUD operations
@@ -327,7 +327,7 @@ column3 datatype constraint,
   * Delete
     
   
-  ## Creating tabel
+  ## Creating table
   
 The CREATE TABLE statement is used to create a new table in a database
 * Syntax
