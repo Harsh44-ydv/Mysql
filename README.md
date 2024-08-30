@@ -314,6 +314,49 @@ column3 datatype constraint,
   
 * In such apps, users must be able to create data, have access to the data in the UI by reading the data, update or edit the data, and delete the data.
 
+## Use and create database before creating table
+* Create database in mysql
+  #### CREATE DATABASE harsh;
+
+```
+  mysql> CREATE DATABASE harsh;
+Query OK, 1 row affected (0.02 sec)
+
+
+```
+
+
+
+#### show databases;
+
+```
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| harsh              |
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.08 sec)
+
+
+```
+* After that use any of database which is show in at terminal
+  #### use harsh
+  
+```
+mysql> use harsh
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+
+
+```
+  
 
 ### Creating database & tables
   * Datatypes
@@ -460,6 +503,14 @@ mysql> select * from Employee;
 3 rows in set (0.00 sec)
 
 mysql> 
+
+
+```
+How to exit form terminal after using MySQL?
+* Press ctrl+d for exit mysql
+```
+mysql> ^DBye
+harsh@harsh-IdeaPad-3-15IAU7:~$ 
 
 
 ```
