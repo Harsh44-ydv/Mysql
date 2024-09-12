@@ -9,7 +9,6 @@
 * [Installation](#Installation)
 * [System requirements](#System-requirements)
 * [What is database?](#What-is-database)
-* [Command types of MySQL](#Command-types-of-MySQL)
 * [Datatypes](#Datatypes)
 * [Constraints](#Constraints)
 * [Application of Mysql CRUD](#Application-of-MySQL-CRUD)
@@ -207,17 +206,6 @@ harsh@harsh-IdeaPad-3-15IAU7:~$
 * The Database is an part of our life. We encounter several activities that involve our interaction with databases, for example in the bank, in the railway station, in school, in a grocery store, 
   etc. These are the instances where we need to store a large amount of data in one place and fetch these data easily. 
 
-## Command type of MySQL?
-There are 3 types of SQL commands:
-
-• DDL (Data Definition Language): A Data Definition Language (DDL) refers to a language that is used to modify data and define data structures. For instance, the DDL commands could be used to remove, add, or 
-                                  modify tables within a database
-
-• DML (Data Manipulation Language): A data manipulation language (DML) is used for adding (inserting), deleting, and modifying (updating) data in a database. A DML is often a sublanguage of a broader database 
-                                   language such as Mysql, with the DML comprising some of the operators in the language.
-
-• DCL (Data Control Language): A data control language (DCL) is used to control access to data stored in a database (authorization). In particular, it is a component of Structured Query Language (SQL). Data Control 
-                              Language is one of the logical group in SQL Commands.
 
 ## Applications of MySQL
 
@@ -293,10 +281,6 @@ column3 datatype constraint,
 * NOT NULL - Ensures that a column cannot have a NULL value
 
 * UNIQUE - Ensures that all values in a column are different
-
-* PRIMARY KEY - A combination of a NOT NULL and UNIQUE
-
-* FOREIGN KEY - Prevents actions that would destroy links between tables (used to link multiple tables together)
 
 * CHECK - Ensures that the values in a column satisfies a specific condition
 
