@@ -257,7 +257,6 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
 
 * Constraints can be specified when the table is created with the CREATE TABLE statement
 
-* after the table is created with the ALTER TABLE statement
 
 * Syntax
 
@@ -325,7 +324,6 @@ Database changed
 
 ### Creating database & tables
   * Datatypes
-  * Primary & foregin keys
   * Constraints
   
 ### Mysql commands
