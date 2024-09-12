@@ -209,8 +209,7 @@ harsh@harsh-IdeaPad-3-15IAU7:~$
 
 ## Applications of MySQL
 
-MySQL is used to store data in tables that map to objects. Each table has a schema defining what columns each row of the table will have. Developers can reliably store and retrieve many data types, including text, numbers, dates, times, and even JSON
-
+MySQL is used to store data in tables that map to objects. Each table has a schema defining what columns each row of the table will have. Developers can reliably store and retrieve many data types, including text, numbers, dates, time
 * Who uses MySQL? 6458 companies reportedly use MySQL in their tech stacks, including Uber, Airbnb, and Pinterest.
 
 * MySQL is a relational database management system
