@@ -236,7 +236,6 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
    
  * Numeric: int, float, bool, etc
    
- * Date and time: date, datetime, etc
 
 ### Commonly used datatype in MySQL
 
@@ -250,10 +249,6 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
 
 * varchar: variable length string that can contain numbers, letters, and special characters
 
-* date: date format YYYY-MM-DD
-
-* datetime: date & time combination, format is YYYY-MM-DD hh:mm:ss
-
 ## Constraints:
 
 * Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint 
@@ -263,7 +258,7 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
 
 * This ensures the accuracy and reliability of the data in the table
 
-* Constraints can be specified when the table is created with the CREATE TABLE statement, or
+* Constraints can be specified when the table is created with the CREATE TABLE statement
 
 * after the table is created with the ALTER TABLE statement
 
@@ -276,17 +271,6 @@ column3 datatype constraint,
 ....
 );
 
-### Commanly used constraints
-
-* NOT NULL - Ensures that a column cannot have a NULL value
-
-* UNIQUE - Ensures that all values in a column are different
-
-* CHECK - Ensures that the values in a column satisfies a specific condition
-
-* DEFAULT - Sets a default value for a column if no value is specified
-
-* CREATE INDEX - Used to create and retrieve data from the database very quickly
 
 ## MySQL application
 * CRUD = CRUD is the for CREATE, READ, UPDATE and DELETE. These terms describe the four essential operations for creating and managing persistent data elements, mainly in relational and 
