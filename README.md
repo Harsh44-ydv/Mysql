@@ -229,8 +229,6 @@ MySQL is used to store data in tables that map to objects. Each table has a sche
   
  * Defined while creating tables in database
   
- * Data types mainly classified into three categories +most used
-  
  * String: char, varchar, etc
    
  * Numeric: int, float, bool, etc
